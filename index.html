@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/tode.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frog Quest: Survival Challenge</title>
+  </head>
+  <body>
+    <div class="score" style="display: none;">0</div>
+    <div class="difficulty-menu">
+      <div class="menu-container">
+        <h1 class="game-title">FROG QUEST</h1>
+        <p class="game-subtitle">Survival Challenge</p>
+        <div class="difficulty-section">
+          <p class="difficulty-label">Select Difficulty</p>
+          <div class="difficulty-buttons">
+            <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn active" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+          </div>
+          <p class="difficulty-desc" id="difficulty-desc">Standard challenge with balanced enemy speed and spawning.</p>
+        </div>
+        <button class="start-btn">Start Game</button>
+      </div>
+    </div>
+    <div class="game-over" style="display: none;">
+      <h1>GAME OVER</h1>
+      <p class="final-score">Score: 0</p>
+      <div class="game-over-actions">
+        <button class="restart-btn">Play Again (Space)</button>
+        <button class="menu-btn">Difficulty Menu</button>
+      </div>
+    </div>
+    <canvas class="game"></canvas>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
